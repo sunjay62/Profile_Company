@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.home {
+  text-align: center;
+  height: max-content;
+  overflow-x: hidden;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(126, 189, 247, 1) 86%, rgba(126, 189, 247, 1) 100%);
+}

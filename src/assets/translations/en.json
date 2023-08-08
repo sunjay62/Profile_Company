@@ -1,0 +1,42 @@
+{
+  "translation": {
+    "navbar": {
+      "home": "Home",
+      "about": "About Us",
+      "info": "Information",
+      "gcg": "GCG",
+      "investor": "Investor",
+      "contact": "Contact",
+      "remala": "About Remala Group",
+      "vision": "Vision & Mision",
+      "achieve": "Achievement",
+      "milestone": "Milestone",
+      "strukturG": "Strucktur Group",
+      "strukturO": "Strucktur Organization",
+      "csr": "CSR",
+      "career": "Career",
+      "news": "News",
+      "directors": "Board of Directors",
+      "commissioners": "Board of Commissioners",
+      "ethic": "Code of Ethics",
+      "policy": "Company Policy",
+      "prospectus": "Prospectus",
+      "disclosure": "Information Disclosure",
+      "rups": "RUPS",
+      "lapyear": "Annual Report",
+      "finance": "Financial Statements"
+    },
+    "hero": {
+      "title": "Innovations On Every Step",
+      "text": "Let's Join to Partnership With us"
+    },
+    "count": {
+      "title1": "Years in Indonesia",
+      "text1": "orem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, non!",
+      "title2": "Our Partners",
+      "text2": "orem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, non!",
+      "title3": "Our Company",
+      "text3": "orem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, non!"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.middleContainer {
+  background-color: rgb(245, 245, 245);
+  height: max-content;
+  z-index: 9;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+  width: 95%;
+  border-radius: 13px;
+  left: 50%;
+  transform: translate(-50%, -1%);
+  position: relative;
+}

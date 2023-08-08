@@ -1,0 +1,33 @@
+.newBusinessContainer {
+  border: 2px solid red;
+  height: max-content;
+  padding: 25px 50px;
+
+  .topBusiness {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+
+    h1 {
+      color: rgb(133, 133, 133);
+      font-size: 2rem;
+    }
+  }
+
+  .bottomBusiness {
+    display: flex;
+
+    .leftBusiness {
+      flex: 1;
+      border: 2px solid blue;
+      height: 50vh;
+    }
+
+    .rightBusiness {
+      flex: 2;
+      border: 2px solid green;
+      height: 50vh;
+    }
+  }
+}

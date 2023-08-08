@@ -1,0 +1,38 @@
+.milestoneContainer {
+  padding: 50px 0 0 0;
+}
+
+.milestoneContainer h1 {
+  margin-bottom: 50px;
+  color: rgb(88, 88, 88);
+  text-shadow: 2px 2px 4px #62abff;
+  font-size: 40px;
+}
+
+.vertical-timeline-element-date {
+  margin-left: -210px;
+  color: black;
+}
+
+.date-border {
+  width: fit-content;
+  background: rgb(0, 132, 255);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #ffffff;
+}
+.vertical-timeline-element-content {
+  box-shadow: 0px 0px 7px -3px rgba(0, 0, 0, 0.73);
+  -webkit-box-shadow: 0px 0px 7px -3px rgba(0, 0, 0, 0.73);
+  -moz-box-shadow: 0px 0px 7px -3px rgba(0, 0, 0, 0.73);
+}
+
+@media screen and (max-width: 850px) {
+  .vertical-timeline-element-date {
+    margin-left: 0px;
+  }
+
+  .milestoneContainer {
+    padding: 50px 25px 50px 25px;
+  }
+}

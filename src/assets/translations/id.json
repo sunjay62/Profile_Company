@@ -1,0 +1,42 @@
+{
+  "translation": {
+    "navbar": {
+      "home": "Beranda",
+      "about": "Tentang Kami",
+      "info": "Informasi",
+      "gcg": "GCG",
+      "investor": "Investor",
+      "contact": "Kontak",
+      "remala": "Tentang Remala Group",
+      "vision": "Visi & Misi",
+      "achieve": "Pencapaian",
+      "milestone": "Milestone",
+      "strukturG": "Struktur Grup",
+      "strukturO": "Struktur Organisasi",
+      "csr": "CSR",
+      "career": "Karir",
+      "news": "Berita",
+      "directors": "Dewan Direksi",
+      "commissioners": "Dewan Komisar",
+      "ethic": "Kode Etik",
+      "policy": "Kebijakan Perusahaan",
+      "prospectus": "Prospektus",
+      "disclosure": "Keterbukaan Informasi",
+      "rups": "RUPS",
+      "lapyear": "Laporan Tahunan",
+      "finance": "Laporan Keuangan"
+    },
+    "hero": {
+      "title": "Inovasi Di Setiap Langkah",
+      "text": "Ayo Bergabung dan Bekerjasama Dengan Kami"
+    },
+    "count": {
+      "title1": "Tahun di Indonesia",
+      "text1": "orem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, non!",
+      "title2": "Partner Kami",
+      "text2": "orem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, non!",
+      "title3": "Perusahaan Kami",
+      "text3": "orem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, non!"
+    }
+  }
+}

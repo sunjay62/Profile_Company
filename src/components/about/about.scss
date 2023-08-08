@@ -1,0 +1,228 @@
+.aboutContainer {
+  color: rgb(104, 104, 104);
+}
+
+.topContainer {
+  margin-top: 50px;
+}
+
+.topContainer h1 {
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+.bottomContainer {
+  height: 80vh;
+  display: flex;
+  padding: 25px 50px;
+  gap: 50px;
+}
+
+.bottomContainer p {
+  font-size: 17px;
+}
+
+.leftContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 70%;
+}
+
+.leftContainer img {
+  border-radius: 7px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.73);
+  -webkit-box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.73);
+  -moz-box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.73);
+}
+
+.rightContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: start;
+  width: 40%;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.rightBottom p {
+  padding-right: 50px;
+}
+
+.rightContainer .rightBottom {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.rightContainer .rightTop h2 {
+  font-size: 25px;
+}
+
+.rightContainer .rightBottom .href {
+  transition: all ease-in-out 0.2s;
+  text-decoration: none;
+  width: max-content;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.rightContainer .rightBottom .href:hover {
+  color: #196aac;
+}
+.rightContainer .rightBottom .href::after {
+  content: '';
+  display: block;
+  border-bottom: 0.1rem solid #328fdb;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+  transform-origin: left;
+}
+.rightContainer .rightBottom .href:hover::after {
+  transform: scaleX(1);
+}
+
+.rightContainer .rightBottom .href .icon {
+  margin-bottom: -6px;
+}
+
+/* CSS MODAL START */
+
+.modalContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.modalContainer .modalTop {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #328fdb;
+}
+
+.modalContainer .modalMiddle {
+  margin: 15px auto;
+  margin-bottom: 15px;
+  width: 85%;
+  text-align: justify;
+}
+
+.modalContainer .modalLastMiddle {
+  margin-bottom: 15px;
+  margin: 15px auto;
+  width: 85%;
+  text-align: justify;
+
+  h2 {
+    text-align: center;
+    color: #328fdb;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 1.3rem;
+  }
+}
+
+.modalContainer .modalBottom {
+  display: flex;
+  margin-top: 15px;
+  justify-content: center;
+  text-align: justify;
+  gap: 50px;
+
+  h3 {
+    text-align: center;
+    color: #328fdb;
+    font-style: italic;
+  }
+
+  .bottomLeft {
+    width: 40%;
+  }
+
+  .bottomRight {
+    width: 40%;
+  }
+}
+
+/* CSS MODAL END */
+
+@media screen and (max-width: 850px) {
+  .bottomContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+  }
+
+  .leftContainer {
+    width: 100%;
+  }
+
+  .rightContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .leftContainer img {
+    width: 100%;
+  }
+
+  .topContainer h1 {
+    font-size: 1.5rem;
+    padding: 25px;
+    margin-bottom: 0;
+  }
+
+  .rightContainer .rightBottom p {
+    padding-right: 0;
+    text-align: justify;
+  }
+
+  .rightContainer .rightBottom .href {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .rightContainer .rightBottom .href:hover::after {
+    transform: scaleX(0.8);
+    margin-left: 20%;
+  }
+
+  .modalContainer .modalBottom {
+    gap: 20px;
+    text-align: justify;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .bottomLeft {
+      position: relative;
+      width: 85%;
+      padding-bottom: 25px;
+    }
+
+    .bottomLeft::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 95%;
+      height: 2px;
+      background-color: rgb(197, 197, 197);
+    }
+
+    .bottomRight {
+      width: 85%;
+    }
+  }
+}
