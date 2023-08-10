@@ -16,6 +16,7 @@ import Switch from '@mui/material/Switch';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import { useDarkMode } from '../../context/darkmode/darkModeContext';
+import Logo from '../../assets/navbar-logo.png';
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 45,
@@ -144,7 +145,9 @@ const Navbar = () => {
   return (
     <>
       <nav className={`${isScrolled ? 'navbarItems scrolled' : 'navbarItems'} ${isDarkMode ? 'darkMode' : ''} `}>
-        <h1 className={`navbar-logo ${isDarkMode ? 'darkMode' : ''}`}>PT Remala Abadi</h1>
+        <div className="logoContainer">
+          <img src={Logo} alt="" className={`navbar-logo ${isDarkMode ? 'darkMode' : ''}`} />
+        </div>
         <div className="menu-icons" onClick={() => setClicked(!clicked)}>
           {clicked ? <CloseIcon /> : <MenuIcon />}
         </div>

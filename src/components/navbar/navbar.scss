@@ -42,19 +42,14 @@
   top: -100px; /* Menggeser navbar di luar tampilan */
 }
 
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+}
+
 .navbar-logo {
-  color: #222;
-  font-size: 1.2rem;
-  font-weight: 800;
   cursor: pointer;
-}
-
-.navbar-logo.darkMode {
-  color: rgb(219, 219, 219);
-}
-
-.navbar-logo span {
-  color: rgb(21, 114, 255);
 }
 
 .nav-menu {
