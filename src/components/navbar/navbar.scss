@@ -13,10 +13,32 @@
   left: 50%;
   transform: translate(-50%);
   z-index: 9999;
-  transition: top 0.5s ease;
+  transition: background-color 0.5s ease, color 0.5s ease, top 0.5s ease;
+}
+
+.navbarItems.darkMode {
+  background-color: #292929d0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  box-shadow: 0 10px 25px 0 rgba(255, 255, 255, 0.411);
+  width: 95%;
+  height: 60px;
+  border-radius: 13px;
+  position: fixed;
+  top: 15px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 9999;
+  transition: background-color 0.5s ease, color 0.5s ease, top 0.5s ease;
 }
 
 .scrolled {
+  top: -100px; /* Menggeser navbar di luar tampilan */
+}
+
+.darkMode.scrolled {
   top: -100px; /* Menggeser navbar di luar tampilan */
 }
 
@@ -25,6 +47,10 @@
   font-size: 1.2rem;
   font-weight: 800;
   cursor: pointer;
+}
+
+.navbar-logo.darkMode {
+  color: rgb(219, 219, 219);
 }
 
 .navbar-logo span {
@@ -42,6 +68,16 @@
 .nav-menu li {
   display: flex;
   align-items: center;
+}
+
+.menu-icon.darkMode {
+  color: rgb(219, 219, 219);
+}
+.menu-title.darkMode {
+  color: rgb(219, 219, 219);
+}
+.submenu-arrow.darkMode {
+  color: rgb(219, 219, 219);
 }
 
 .menu-icon svg {
@@ -147,6 +183,11 @@
   z-index: 1;
   transition: opacity 0.3s, transform 0.3s;
 }
+.dropdown-menu.darkMode,
+.dropdown-menu2.darkMode {
+  background-color: #292929d0;
+  box-shadow: 0 10px 25px 0 rgba(255, 255, 255, 0.411);
+}
 
 @keyframes fadeUp {
   from {
@@ -177,7 +218,20 @@
   transform: translateX(-50%);
   border: solid transparent;
   border-width: 0 8px 8px 10px;
-  border-color: transparent transparent #ffffffd0 transparent;
+  border-color: transparent transparent #fffffff5 transparent;
+}
+
+/* Add arrow indicator */
+.containerMenu:hover .dropdown-menu.darkMode::before,
+.containerMenu:hover .dropdown-menu2.darkMode::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: solid transparent;
+  border-width: 0 8px 8px 10px;
+  border-color: transparent transparent #292929d0 transparent;
 }
 
 /* Style for the individual dropdown items */
@@ -185,6 +239,7 @@
 .dropdown-menu2 li {
   padding: 5px;
 }
+
 .dropdown-menu li .subMenu,
 .dropdown-menu2 li .subMenu {
   width: 100%;
@@ -198,6 +253,12 @@
   display: block;
   padding: 5px 15px;
   transition: all 0.2s ease-in-out;
+}
+
+/* Style for the links in the dropdown items */
+.dropdown-menu.darkMode a,
+.dropdown-menu2.darkMode a {
+  color: rgb(219, 219, 219);
 }
 
 /* Change background color on hover */

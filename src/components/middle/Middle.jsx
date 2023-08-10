@@ -5,14 +5,16 @@ import Contact from '../../components/contact/Contact';
 import Milestone from '../../components/milestone/Milestone';
 import Marquee from '../../components/marquee/Marquee';
 import Countprofile from '../countprofile/Countprofile';
-
 import './middle.css';
 import Executiveteam from '../executiveteam/Executiveteam';
 import Newbusiness from '../newbusiness/Newbusiness';
+import { useDarkMode } from '../../context/darkmode/darkModeContext';
 
 const Middle = () => {
+  const { isDarkMode } = useDarkMode();
+
   return (
-    <div className="middleContainer">
+    <div className={`middleContainer ${isDarkMode ? 'darkMode' : ''}`}>
       <section>
         <div className="countSection">
           <Countprofile />
